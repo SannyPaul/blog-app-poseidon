@@ -1,6 +1,6 @@
 # Blog Application
 
-A full-stack blog application built with modern web technologies, featuring user authentication, blog management, comments, and reactions.
+A full-stack Mobile Responsive blog application built with modern web technologies, featuring user authentication, blog management, comments, and reactions.
 
 ## 🚀 Features
 
