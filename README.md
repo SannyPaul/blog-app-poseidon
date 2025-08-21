@@ -82,7 +82,7 @@ A full-stack blog application built with modern web technologies, featuring user
    NODE_ENV=development
    PORT=5000
    MONGO_URI=mongodb://localhost:27017/blogapp
-   JWT_SECRET=blogapp_7f8d9e0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8
+   JWT_SECRET=your_jwt_secret_key
    JWT_EXPIRE=30d
    JWT_COOKIE_EXPIRE=30
    FILE_UPLOAD_PATH=./public/uploads
