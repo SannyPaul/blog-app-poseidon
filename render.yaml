@@ -1,0 +1,32 @@
+services:
+  - type: web
+    name: blog-backend
+    env: node
+    buildCommand: npm install --only=production
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: MONGO_URI
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: JWT_EXPIRE
+        value: 30d
+      - key: JWT_COOKIE_EXPIRE
+        value: "30"
+      - key: FILE_UPLOAD_PATH
+        value: "./public/uploads"
+      - key: MAX_FILE_UPLOAD
+        value: "5000000"
+      - key: CORS_ORIGIN
+        value: "https://your-frontend-url.com"  # Update this with your frontend URL
+
+# If you want to add a database service later
+# databases:
+#   - name: blog-db
+#     databaseName: blogapp
+#     user: admin
+#     plan: free
